@@ -1,0 +1,21 @@
+@value constants: './constants.css';
+@value b,r,g from constants;
+
+.background {
+    background: orange
+}
+
+:local(.title) {
+    /* 继承background的样式 */
+    composes: background;
+    color: yellowgreen;
+}
+
+.header {
+    composes: fontSize from './other.css';
+    padding: 30px;
+}
+
+:global(.global-title) {
+    color: g;
+}
