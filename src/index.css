@@ -5,7 +5,8 @@
     background: orange
 }
 
-:local(.title) {
+/* only allowed when selector is single */
+.title {
     /* 继承background的样式 */
     composes: background;
     color: yellowgreen;
